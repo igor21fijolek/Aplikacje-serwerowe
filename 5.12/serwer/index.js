@@ -70,7 +70,7 @@ app.get("/przelicz/:grade", (req,res)=>{
 })
 
 
-app.get("/reverseWords/sentence", (req,res)=>{
+app.get("/reverseWords/:sentence", (req,res)=>{
     let sentence = req.params.sentence
 
     let rev = sentence.split(" ").reverse().join(" ")
